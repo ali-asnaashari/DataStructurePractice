@@ -19,8 +19,20 @@ public class Array {
         items[count++] = value;
     }
 
+    public void removeAt(int index) {
+        if (index < 0 || index >= count)
+            throw new IllegalArgumentException();
+
+        for (int i  = index; i < count; i++)
+            items[i] = items[i+1];
+
+        count--;
+
+    }
+
     public void print(){
         for (int i = 0 ; i < count ; i++)
             System.out.println(items[i]);
+        System.out.println("----------------------------------");
     }
 }
