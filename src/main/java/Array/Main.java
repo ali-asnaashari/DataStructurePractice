@@ -5,6 +5,17 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
+
+        Array numbers = new Array(3);
+        numbers.insert(100);
+        numbers.insert(200);
+        numbers.insert(300);
+        numbers.insert(400);
+        numbers.print();
+
+
+
+        /** Part1
         // Definition Array
         int[] numbers = new int[3];
         // Output , combination of the Type of array followed by an @ sign and
@@ -24,6 +35,6 @@ public class Main {
         String[] names = {"ali","ahmad","sina"};
         System.out.println(names.length);
         System.out.println(Arrays.toString(names));
-
+        **/
     }
 }
