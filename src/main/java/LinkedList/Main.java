@@ -6,13 +6,20 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
+        /** Part6 - implement removeLast */
+        MyLinkedList list = new MyLinkedList();
+        list.addFirst(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.removeLast();
+
         /** Part5 - implement removeFirst */
         MyLinkedList list = new MyLinkedList();
         list.addFirst(10);
         list.addLast(20);
         list.addLast(30);
         list.removeFirst();
-
+         */
 
         /** Part4 - implement contains
          MyLinkedList list = new MyLinkedList();
