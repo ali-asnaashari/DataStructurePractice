@@ -15,6 +15,7 @@ public class MyLinkedList {
 
     private Node first;
     private Node last;
+    private int size;
 
     private boolean isEmpty(){
         return first == null;
@@ -29,6 +30,7 @@ public class MyLinkedList {
             last.next = node;
             last = node;
         }
+        size++;
     }
 
     public void addFirst(int item){
@@ -40,6 +42,7 @@ public class MyLinkedList {
             node.next = first;
             first = node;
         }
+        size++;
     }
 
     public int indexOf(int item){
@@ -68,6 +71,7 @@ public class MyLinkedList {
         // if LinkedList has one Element
         if (first == last){
             first = last = null;
+            size = 0;
             return;
         }
 
@@ -76,21 +80,29 @@ public class MyLinkedList {
         first.next = null;
         first = second;
 
+        size--;
+
     }
 
     public void removeLast(){
 
+        // if LinkedList is Empty
         if (isEmpty())
             throw new NoSuchElementException();
 
+        // if LinkedList has one Element
         if (first == last){
             first = last = null;
+            size = 0;
             return;
         }
 
+        // O.W
         Node previous = getPrevious(last);
         last = previous;
         last.next = null;
+
+        size--;
     }
 
     private Node getPrevious(Node node){
@@ -101,6 +113,10 @@ public class MyLinkedList {
             current = current.next;
         }
         return null;
+    }
+
+    public int size() {
+        return size;
     }
 
 }
