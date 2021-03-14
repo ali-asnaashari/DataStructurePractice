@@ -6,12 +6,20 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        /** Part2 - create MyLinkedList & implement addLast */
+        /** Part3 - implement addFirst */
+        MyLinkedList list = new MyLinkedList();
+        list.addFirst(10);
+        list.addLast(20);
+        list.addFirst(30);
+
+
+
+        /** Part2 - create MyLinkedList & implement addLast
         MyLinkedList list = new MyLinkedList();
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
-
+         */
 
 
         /** Part1 - Working With LinkedList
