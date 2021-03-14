@@ -6,7 +6,15 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        /** Part7 - implement size */
+        /** Part8 - Convert LinkedList to Array */
+         MyLinkedList list = new MyLinkedList();
+        list.addFirst(10);
+        list.addLast(20);
+        list.addLast(30);
+        System.out.println(Arrays.toString(list.toArray()));
+
+
+        /** Part7 - implement size
          MyLinkedList list = new MyLinkedList();
         System.out.println(list.size());
         list.addFirst(10);
@@ -16,6 +24,7 @@ public class Main {
         System.out.println(list.size());
         list.removeLast();
         System.out.println(list.size());
+         */
 
 
         /** Part6 - implement removeLast
