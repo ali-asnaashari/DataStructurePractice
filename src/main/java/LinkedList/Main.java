@@ -6,13 +6,22 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        /** Part1 - Working With LinkedList */
+        /** Part2 - create MyLinkedList & implement addLast */
+        MyLinkedList list = new MyLinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+
+
+
+        /** Part1 - Working With LinkedList
 
         // Store bunch of Integer in LinkedList
         LinkedList<Integer> numbers = new LinkedList<>();
 
         // Store any kind of object in LinkedList
         LinkedList list = new LinkedList();
+
         list.addFirst(12);
         list.addLast(20);
         list.addFirst(10);
@@ -36,5 +45,6 @@ public class Main {
         // convert LinkedList to Array
         Object[] array = list.toArray();
         System.out.println(Arrays.toString(array));
+        */
     }
 }
