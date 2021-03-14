@@ -6,13 +6,22 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        /** Part3 - implement contains */
+        /** Part5 - implement removeFirst */
+        MyLinkedList list = new MyLinkedList();
+        list.addFirst(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.removeFirst();
+
+
+        /** Part4 - implement contains
          MyLinkedList list = new MyLinkedList();
          list.addFirst(10);
          list.addLast(20);
          list.addLast(30);
         System.out.println(list.contains(20));
         System.out.println(list.contains(40));
+         */
 
 
         /** Part3 - implement indexOf
