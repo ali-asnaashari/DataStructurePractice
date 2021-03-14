@@ -53,5 +53,9 @@ public class MyLinkedList {
         return -1;
     }
 
+    public boolean contains(int item){
+        return indexOf(item) != -1;
+    }
+
 
 }
