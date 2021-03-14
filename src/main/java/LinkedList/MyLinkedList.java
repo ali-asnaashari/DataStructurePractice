@@ -40,6 +40,18 @@ public class MyLinkedList {
         }
     }
 
+    public int indexOf(int item){
+        int index = 0;
+        Node current = first;
+
+        while (current != null) {
+            if ( current.value == item)
+                return index;
+            current = current.next;
+            index++;
+        }
+        return -1;
+    }
 
 
 }

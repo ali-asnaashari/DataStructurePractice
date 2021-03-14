@@ -6,12 +6,22 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        /** Part3 - implement addFirst */
+
+        /** Part3 - implement indexOf */
+        MyLinkedList list = new MyLinkedList();
+        list.addFirst(10);
+        list.addLast(20);
+        list.addLast(30);
+        System.out.println(list.indexOf(20));
+        System.out.println(list.indexOf(40));
+
+
+        /** Part3 - implement addFirst
         MyLinkedList list = new MyLinkedList();
         list.addFirst(10);
         list.addLast(20);
         list.addFirst(30);
-
+         */
 
 
         /** Part2 - create MyLinkedList & implement addLast
@@ -54,5 +64,7 @@ public class Main {
         Object[] array = list.toArray();
         System.out.println(Arrays.toString(array));
         */
+
+
     }
 }
