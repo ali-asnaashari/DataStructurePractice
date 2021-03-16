@@ -5,11 +5,22 @@ import java.util.Stack;
 public class Main {
     public static void main(String[] args) {
 
-        /** Part2 - Reversing a String **/
+        /** Part3 - StringBalancing **/
+        String str = "([1*2])";
+        String str1 = "([>1*2)]";
+        String str2 = "(]<1*2>[)";
+        Expression expression = new Expression();
+        System.out.println(expression.isBalanced(str));
+        System.out.println(expression.isBalanced(str1));
+        System.out.println(expression.isBalanced(str2));
+
+
+        /** Part2 - Reversing a String
         String str = "Ali";
         StringReverser reverser = new StringReverser();
         String result = reverser.revers(str);
         System.out.println(result);
+         **/
 
 
         /** Part1 - working with stack
