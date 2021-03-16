@@ -4,13 +4,21 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
+
+        /** Part2 - Reversing a String **/
+        String str = "Ali";
+        StringReverser reverser = new StringReverser();
+        String result = reverser.revers(str);
+        System.out.println(result);
+
+
         /** Part1 - working with stack
          * push()
          * pop()
          * peek()
          * search
          * isEmpty()
-         * **/
+
         Stack<Integer> stack = new Stack<>();
         stack.push(10);
         stack.push(20);
@@ -35,6 +43,6 @@ public class Main {
         // search for an element in the stack and get its distance from the top.
         int value = stack.search(30);
         System.out.println(value);
-
+         **/
     }
 }
