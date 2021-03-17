@@ -115,6 +115,22 @@ public class MyLinkedList {
         return null;
     }
 
+    public void reverse(){
+        if (isEmpty()) return;
+
+        Node previous = first;
+        Node current = first.next;
+        while (current != null){
+            Node BackUp = current.next;
+            current.next = previous;
+            previous = current;
+            current = BackUp;
+        }
+        last = first;
+        last.next = null;
+        first = previous;
+    }
+
     public int size() {
         return size;
     }

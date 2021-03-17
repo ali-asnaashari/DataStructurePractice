@@ -6,13 +6,23 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        /** Part8 - Convert LinkedList to Array */
+        /** Reverse LinkedList */
+        MyLinkedList list = new MyLinkedList();
+        list.addFirst(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.reverse();
+        int[] array = list.toArray();
+        System.out.println(Arrays.toString(array));
+
+
+        /** Part8 - Convert LinkedList to Array
          MyLinkedList list = new MyLinkedList();
         list.addFirst(10);
         list.addLast(20);
         list.addLast(30);
         System.out.println(Arrays.toString(list.toArray()));
-
+         */
 
         /** Part7 - implement size
          MyLinkedList list = new MyLinkedList();
