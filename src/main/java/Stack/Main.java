@@ -5,7 +5,22 @@ import java.util.Stack;
 public class Main {
     public static void main(String[] args) {
 
-        /** Part3 - StringBalancing **/
+        /** Implement MyStack **/
+        MyStack myStack = new MyStack();
+        myStack.push(10);
+        myStack.push(20);
+        myStack.push(30);
+        System.out.println(myStack);
+        int top = myStack.pop();
+        System.out.println(top);
+        System.out.println(myStack);
+        myStack.peek();
+        System.out.println(myStack.peek());
+        System.out.println(myStack);
+        System.out.println(myStack.isEmpty());
+
+
+        /** Part3 - StringBalancing
         String str = "([1*2])";
         String str1 = "([>1*2)]";
         String str2 = "(]<1*2>[)";
@@ -13,6 +28,7 @@ public class Main {
         System.out.println(expression.isBalanced(str));
         System.out.println(expression.isBalanced(str1));
         System.out.println(expression.isBalanced(str2));
+         **/
 
 
         /** Part2 - Reversing a String
