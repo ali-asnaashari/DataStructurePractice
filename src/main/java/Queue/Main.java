@@ -7,7 +7,31 @@ import java.util.Stack;
 public class Main {
     public static void main(String[] args) {
 
-        /** Reversing a Queue */
+        /** Building Queue With Array */
+        ArrayQueue queue = new ArrayQueue(5);
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        System.out.println(queue);
+        queue.dequeue();
+        int front = queue.dequeue();
+        System.out.println(front);
+        System.out.println(queue);
+        queue.enqueue(40);
+        queue.enqueue(50);
+        queue.enqueue(60);
+        queue.enqueue(70);
+        System.out.println(queue);
+        front = queue.dequeue();
+        System.out.println(front);
+        System.out.println(queue);
+        System.out.println(queue.peek());
+        System.out.println(queue.isEmpty());
+        System.out.println(queue.isFull());
+
+
+
+        /** Reversing a Queue
         Queue<Integer> queue = new ArrayDeque<>();
         queue.add(10);
         queue.add(20);
@@ -15,7 +39,7 @@ public class Main {
         System.out.println("Queue before reverse: \n" + queue);
         reverse(queue);
         System.out.println("Queue after reverse: \n" + queue);
-
+        */
 
 
         /** Working with Queues
