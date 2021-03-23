@@ -1,20 +1,35 @@
 package Queue;
 
 import java.util.ArrayDeque;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
 
-        /** Building Queue with Stack */
+        /** Priority Queue
+         * object are process based on the priority , not the order in which that join the queue.
+         * if we create priority Queue in java , by default , smallest number come out first.
+         * */
+
+        PriorityQueue<Integer> queue = new PriorityQueue<>();
+        queue.add(4);
+        queue.add(1);
+        queue.add(3);
+        queue.add(2);
+        while (!queue.isEmpty())
+            System.out.println(queue.remove());
+
+
+        /** Building Queue with Stack
         QueueWithTwoStack queue = new QueueWithTwoStack();
         queue.enqueue(10);
         queue.enqueue(20);
         queue.enqueue(30);
         int first = queue.dequeue();
         System.out.println(first);
-
+        */
 
 
         /** Building Queue With Array
