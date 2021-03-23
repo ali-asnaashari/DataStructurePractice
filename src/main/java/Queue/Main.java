@@ -2,9 +2,22 @@ package Queue;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
+
+        /** Reversing a Queue */
+        Queue<Integer> queue = new ArrayDeque<>();
+        queue.add(10);
+        queue.add(20);
+        queue.add(30);
+        System.out.println("Queue before reverse: \n" + queue);
+        reverse(queue);
+        System.out.println("Queue after reverse: \n" + queue);
+
+
+
         /** Working with Queues
          * printer
          * web server
@@ -19,7 +32,7 @@ public class Main {
          * LinkedList class in java implements the queue interface
          * Deque --> double ended queue --> queue has two end , add items from any direction
          * ArrayDeque internally uses the resizable array to store the item
-         */
+
         Queue<Integer> queue = new ArrayDeque<>();
         queue.add(10);
         queue.add(20);
@@ -28,5 +41,19 @@ public class Main {
         int deletedItem = queue.remove();
         System.out.println(deletedItem);
         System.out.println(queue);
+
+        */
+
+    }
+
+    public static void reverse(Queue<Integer> queue)
+    {
+        Stack<Integer> stack = new Stack<>();
+
+        while(! queue.isEmpty() )
+            stack.push(queue.remove());
+
+        while (! stack.isEmpty() )
+            queue.add(stack.pop());
     }
 }
