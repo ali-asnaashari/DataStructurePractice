@@ -8,10 +8,22 @@ import java.util.Stack;
 public class Main {
     public static void main(String[] args) {
 
+        MyPriorityQueue queue = new MyPriorityQueue();
+        queue.add(2);
+        queue.add(3);
+        queue.add(1);
+        queue.add(5);
+        queue.add(4);
+        System.out.println(queue);
+        while(!queue.isEmpty())
+            System.out.println(queue.remove());
+
+
+
+
         /** Priority Queue
          * object are process based on the priority , not the order in which that join the queue.
          * if we create priority Queue in java , by default , smallest number come out first.
-         * */
 
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         queue.add(4);
@@ -20,6 +32,7 @@ public class Main {
         queue.add(2);
         while (!queue.isEmpty())
             System.out.println(queue.remove());
+        */
 
 
         /** Building Queue with Stack
