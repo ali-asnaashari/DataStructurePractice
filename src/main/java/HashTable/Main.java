@@ -1,17 +1,49 @@
 package HashTable;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        /** set
+         *  set: unique list & just key
+         *  Method: add , remove , removeALL , contains , size , clear
+         *  iterate over set like iterate over map
+         * */
 
-        /** Find First NonRepeating Char */
+        Set<Integer> set = new HashSet<>();
+        int[] numbers = {1,2,3,4,2,3,5,1,6};
+        for (int item : numbers)
+            set.add(item);
+        System.out.println(set);
+        System.out.println(set.size());
+
+        set.remove(2);
+        System.out.println(set);
+        System.out.println(set.contains(2));
+
+        Set<Integer> set2 = new HashSet<>();
+        set2.add(1);
+        set2.add(6);
+        set.removeAll(set2);
+        System.out.println(set);
+
+        set.clear();
+        System.out.println(set);
+        System.out.println(set.size());
+
+
+
+
+        /** Find First NonRepeating Char
         CharFinder finder = new CharFinder();
         char ch = finder.findFirstNonRepeatingChar("hello world");
         System.out.println(ch);
+        */
 
 
         /** Working with HashTables
