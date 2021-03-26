@@ -7,6 +7,13 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+        /** Find First NonRepeating Char */
+        CharFinder finder = new CharFinder();
+        char ch = finder.findFirstNonRepeatingChar("hello world");
+        System.out.println(ch);
+
+
         /** Working with HashTables
          * super fast LookUp
          * use for: spell checkers - Building Dictionaries - Compiler - Code editor
@@ -21,7 +28,7 @@ public class Main {
          * entrySet() ---> return list of key value pairs --> Iterable
          * HashMap Accept null keys and value
          * in HashMap we can not have duplicate keys
-         */
+
 
         // Create HashMap
         Map<Integer,String> map = new HashMap<>();
@@ -63,6 +70,8 @@ public class Main {
 
         for (Map.Entry<Integer, String> item: mapV1.entrySet())
             System.out.println(item.getValue());
+
+         */
 
     }
 
