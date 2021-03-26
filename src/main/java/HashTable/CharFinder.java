@@ -3,7 +3,9 @@ package HashTable;
 import com.sun.xml.internal.fastinfoset.util.CharArray;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class CharFinder {
 
@@ -24,4 +26,29 @@ public class CharFinder {
 
         return Character.MAX_VALUE;
     }
+
+    public char findFirstRepeatedChar(String str){
+        Set<Character> set = new HashSet<>();
+
+        char[] chars = str.toCharArray();
+        for (char ch : chars) {
+            if (set.contains(ch))
+                return ch;
+            set.add(ch);
+        }
+
+        return Character.MAX_VALUE;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }

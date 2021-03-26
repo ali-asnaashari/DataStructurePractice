@@ -9,11 +9,18 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+        /** Find First Repeating Char */
+        CharFinder finder = new CharFinder();
+        char ch = finder.findFirstRepeatedChar("hello world");
+        System.out.println(ch);
+
+
+
         /** set
          *  set: unique list & just key
          *  Method: add , remove , removeALL , contains , size , clear
          *  iterate over set like iterate over map
-         * */
 
         Set<Integer> set = new HashSet<>();
         int[] numbers = {1,2,3,4,2,3,5,1,6};
@@ -35,7 +42,7 @@ public class Main {
         set.clear();
         System.out.println(set);
         System.out.println(set.size());
-
+        */
 
 
 
