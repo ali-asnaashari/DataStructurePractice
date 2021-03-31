@@ -14,7 +14,6 @@ public class Main {
          * put()
          * get()
          * remove()
-         */
 
         MyHashTable table = new MyHashTable(5);
         table.put(6,"A");
@@ -25,7 +24,7 @@ public class Main {
         System.out.println(table.get(10));
         table.remove(6);
         table.remove(18);
-
+         */
 
 
         /** Find First Repeating Char
