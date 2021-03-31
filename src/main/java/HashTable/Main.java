@@ -9,12 +9,27 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /** MyHashTable
+         * collisions handle by chains(LinkedList)
+         * put()
+         * get()
+         */
 
-        /** Find First Repeating Char */
+        MyHashTable table = new MyHashTable(5);
+        table.put(6,"A");
+        table.put(8,"B");
+        table.put(11,"C");
+        table.put(6,"A+");
+        System.out.println(table.get(6));
+        System.out.println(table.get(10));
+
+
+
+        /** Find First Repeating Char
         CharFinder finder = new CharFinder();
         char ch = finder.findFirstRepeatedChar("hello world");
         System.out.println(ch);
-
+        */
 
 
         /** set

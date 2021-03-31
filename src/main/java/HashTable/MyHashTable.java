@@ -37,6 +37,18 @@ public class MyHashTable {
         entries[index].addLast(new Entry(key,value));
     }
 
+    public String get(int key){
+        int index = hash(key);
+
+        if (entries[index] != null){
+            for (Entry entry : entries[index]) {
+                if (entry.key == key)
+                    return entry.value;
+            }
+        }
+        return null;
+    }
+
     private int hash(int key){
         return Math.abs(key) % capacity;
     }
