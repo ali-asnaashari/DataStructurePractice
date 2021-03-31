@@ -13,6 +13,7 @@ public class Main {
          * collisions handle by chains(LinkedList)
          * put()
          * get()
+         * remove()
          */
 
         MyHashTable table = new MyHashTable(5);
@@ -22,6 +23,8 @@ public class Main {
         table.put(6,"A+");
         System.out.println(table.get(6));
         System.out.println(table.get(10));
+        table.remove(6);
+        table.remove(18);
 
 
 

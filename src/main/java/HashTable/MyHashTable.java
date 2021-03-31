@@ -49,6 +49,33 @@ public class MyHashTable {
         return null;
     }
 
+    public void remove(int key){
+        int index = hash(key);
+
+        if (entries[index] == null)
+            throw new IllegalStateException();
+
+        for (Entry entry : entries[index]) {
+            if (entry.key == key){
+                entries[index].remove(entry);
+                return;
+            }
+        }
+        throw new IllegalStateException();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     private int hash(int key){
         return Math.abs(key) % capacity;
     }
