@@ -19,7 +19,7 @@ public class Tree {
 
     private Node root;
 
-    public void insert (int value){
+    public void insert (int value) {
 
         if(root == null){
             root = new Node(value);
@@ -44,6 +44,20 @@ public class Tree {
             }
         }
 
+    }
+
+    public boolean find(int value) {
+        Node current = root;
+
+        while(current != null){
+            if(value < current.value)
+                current = current.leftChild;
+            else if(value > current.value)
+                current = current.rightChild;
+            else
+                return true;
+        }
+        return false;
     }
 }
 
