@@ -5,7 +5,16 @@ import java.util.Stack;
 public class Main {
     public static void main(String[] args) {
 
-        /** Implement MyStack **/
+        /** Convert Postfix to Infix */
+
+        ConvertPostfixToInfix convertPostfixToInfix = new ConvertPostfixToInfix("2359+-*");
+        String result = convertPostfixToInfix.convertToInfix();
+        System.out.println("infix = " + result);
+
+
+
+
+        /** Implement MyStack *
         MyStack myStack = new MyStack();
         myStack.push(10);
         myStack.push(20);
@@ -18,6 +27,7 @@ public class Main {
         System.out.println(myStack.peek());
         System.out.println(myStack);
         System.out.println(myStack.isEmpty());
+         */
 
 
         /** Part3 - StringBalancing
