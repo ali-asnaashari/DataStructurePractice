@@ -6,7 +6,21 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        /** Reverse LinkedList */
+        /** check if a singly linked list is palindrome */
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.addFirst(6);
+        linkedList.addFirst(2);
+        linkedList.addFirst(6);
+
+        Palindrome isPalindrome = new Palindrome();
+        System.out.println(isPalindrome.isPalindrome(linkedList));
+
+
+
+
+
+
+        /** Reverse LinkedList
         MyLinkedList list = new MyLinkedList();
         list.addFirst(10);
         list.addLast(20);
@@ -14,6 +28,8 @@ public class Main {
         list.reverse();
         int[] array = list.toArray();
         System.out.println(Arrays.toString(array));
+        */
+
 
 
         /** Part8 - Convert LinkedList to Array
