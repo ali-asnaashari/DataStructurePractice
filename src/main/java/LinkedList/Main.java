@@ -6,7 +6,19 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        /** check if a singly linked list is palindrome */
+        MergeSort linkedList = new MergeSort();
+        linkedList.push(20);
+        linkedList.push(8);
+        linkedList.push(15);
+        linkedList.push(2);
+
+        linkedList.head = linkedList.mergeSort(linkedList.head);
+        System.out.print("\nSorted Linked List is: \n");
+        linkedList.printList(linkedList.head);
+
+
+
+        /** check if a singly linked list is palindrome
         LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addFirst(6);
         linkedList.addFirst(2);
@@ -14,10 +26,7 @@ public class Main {
 
         Palindrome isPalindrome = new Palindrome();
         System.out.println(isPalindrome.isPalindrome(linkedList));
-
-
-
-
+        */
 
 
         /** Reverse LinkedList
